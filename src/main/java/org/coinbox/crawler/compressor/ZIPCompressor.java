@@ -16,7 +16,7 @@ public class ZIPCompressor implements Compressor{
 	@Override
 	public boolean compress(List<File> files) {
 		try {
-			ZipFile zipFile = new ZipFile(Config.ZIP_PATH);
+			ZipFile zipFile = new ZipFile(Config.ZIP_ARCH);
 			ZipParameters parameters = new ZipParameters();
 			
 			// set compression method to store compression

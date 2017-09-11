@@ -1,4 +1,4 @@
-package org.coinbox.crawler.parser;
+package org.coinbox.crawler.domain;
 
 import java.util.ArrayList;
 import java.util.List;

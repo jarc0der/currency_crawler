@@ -1,4 +1,4 @@
-package org.coinbox.crawler.formatter;
+package org.coinbox.crawler.normalizer;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

@@ -1,14 +1,3 @@
 https://coinmarketcap.com/currencies/factom/historical-data/?start=20160830&end=20170830
 https://coinmarketcap.com/assets/lunyr/historical-data/?start=20160830&end=20170830
 https://coinmarketcap.com/assets/tokencard/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/blocknet/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/geocoin/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/ion/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/assets/numeraire/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/lisk/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/ark/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/assets/basic-attention-token/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/ripple/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/ubiq/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/decent/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/currencies/vertcoin/historical-data/?start=20160830&end=20170830

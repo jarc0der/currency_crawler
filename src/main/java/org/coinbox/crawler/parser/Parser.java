@@ -1,7 +1,9 @@
 package org.coinbox.crawler.parser;
 
+import org.coinbox.crawler.domain.Data;
+
 public interface Parser {
 
-	Table parserData(String url);
+	Data parserData(String url);
 	
 }

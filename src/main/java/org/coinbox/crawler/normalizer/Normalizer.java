@@ -1,4 +1,4 @@
-package org.coinbox.crawler.formatter;
+package org.coinbox.crawler.normalizer;
 
 @FunctionalInterface
 public interface Normalizer {

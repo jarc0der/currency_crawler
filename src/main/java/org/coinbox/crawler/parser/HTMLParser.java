@@ -4,8 +4,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.coinbox.crawler.formatter.Normalizer;
-import org.coinbox.crawler.formatter.RegExpNormalizer;
+import org.coinbox.crawler.domain.Table;
+import org.coinbox.crawler.normalizer.Normalizer;
+import org.coinbox.crawler.normalizer.RegExpNormalizer;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
