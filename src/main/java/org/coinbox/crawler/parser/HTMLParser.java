@@ -7,6 +7,7 @@ import java.util.List;
 import org.coinbox.crawler.domain.Table;
 import org.coinbox.crawler.normalizer.Normalizer;
 import org.coinbox.crawler.normalizer.RegExpNormalizer;
+import org.coinbox.crawler.normalizer.StrReplaceNormalizer;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -53,14 +54,18 @@ public class HTMLParser implements Parser{
 	private List<String[]> convertHTMLToString(Elements elements){
 		List<String[]> parsedData = new ArrayList<>();
 		
-		Normalizer normalizer = new RegExpNormalizer("\\w{3}\\s(\\d{2}),\\s(\\d{4})@$1/$2");
+		Normalizer regExpNomalizer = new RegExpNormalizer();
+		regExpNomalizer.setParams("\\w{3}\\s(\\d{2}),\\s(\\d{4})@$1/$2");
+		
+		Normalizer strReplaceNormalizer = new StrReplaceNormalizer();
+		strReplaceNormalizer.setParams(",@.");
 		
 		for(Element tr : elements){
 
 			String parsedRow = tr.text();
 			
-			parsedRow = normalizer.normalize(parsedRow);
-			parsedRow = parsedRow.replaceAll("\\,", "\\.");
+			parsedRow = regExpNomalizer.normalize(parsedRow);
+			parsedRow = strReplaceNormalizer.normalize(parsedRow);
 				
 			parsedData.add(parsedRow.split(" "));
 		}

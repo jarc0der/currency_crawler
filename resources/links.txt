@@ -1,3 +1,1 @@
-https://coinmarketcap.com/currencies/factom/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/assets/lunyr/historical-data/?start=20160830&end=20170830
-https://coinmarketcap.com/assets/tokencard/historical-data/?start=20160830&end=20170830
+https://coinmarketcap.com/currencies/bitcoin/historical-data/?start=20160831&end=20170831
