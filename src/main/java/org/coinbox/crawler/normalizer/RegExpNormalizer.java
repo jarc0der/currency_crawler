@@ -8,26 +8,10 @@ public class RegExpNormalizer implements Normalizer{
 	private Pattern pattern;
 	private String replace;
 	
-	public RegExpNormalizer(String regExp) {
-		if(regExp == null)
-			throw new IllegalArgumentException("Invalid regExp " + regExp);
-		
-		initVariables(regExp);
-	}
-	
-	private void initVariables(String regExp){
-		String[] params = regExp.split("@");
-		
-		if(params.length != 2) 
-			throw new IllegalArgumentException("Wrong params " + regExp);
-		
-		this.pattern = Pattern.compile(params[0]);
-		this.replace = params[1];
-	}
+	public RegExpNormalizer() {}
 	
 	@Override
 	public String normalize(String input) {
-//		Pattern p = Pattern.compile("");
 		Matcher m = pattern.matcher(input);
 		
 		if(m.find()){
@@ -35,6 +19,17 @@ public class RegExpNormalizer implements Normalizer{
 		}
 		
 		return input;
+	}
+
+	@Override
+	public void setParams(String str) {
+		String[] params = str.split("@");
+		
+		if(params.length != 2) 
+			throw new IllegalArgumentException("Wrong params " + str);
+		
+		this.pattern = Pattern.compile(params[0]);
+		this.replace = params[1];
 	}
 
 }
