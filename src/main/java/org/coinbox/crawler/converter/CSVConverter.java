@@ -13,11 +13,11 @@ public class CSVConverter {
     public void convertToCSV(Stream<Table> csvData) {
         csvData.forEach(currentTable ->{
             System.out.println("Process " + currentTable.getName());
-            try (CSVWriter writer = new CSVWriter(new FileWriter(Config.CSV_FOLDER + currentTable.getName() + ".csv"))) { // exception nullP
+            try (CSVWriter writer = new CSVWriter(new FileWriter(Config.CSV_FOLDER + currentTable.getName() + ".csv"))) {
                 writer.writeAll(currentTable.getData());
             } catch (IOException e) {
                 System.out.println("Convertor error " + e.getMessage());
             }
         });
     }
-}//мене не чути? NO =(
+}
